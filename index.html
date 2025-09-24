@@ -1,162 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>โปรไฟล์ส่วนตัว — พอร์ตโฟลิโอ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>NEBULA X — Portfolio</title>
+  <meta name="description" content="Portfolio ของ NEBULA X — โชว์ผลงานซอฟต์แวร์ หุ่นยนต์ และโปรเจกต์สร้างสรรค์" />
+  <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="icon" href="./favicon.ico"> -->
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="#about">พอร์ตของฉัน</a>
-        <div class="nav-right">
-          <a href="#about">ประวัติ</a>
-          <a href="#skills">ทักษะ</a>
-          <a href="#projects">ผลงาน</a>
-          <a href="#timeline">ไทม์ไลน์</a>
-          <a href="#contact">ติดต่อ</a>
-          <button id="mode" class="btn ghost" aria-label="สลับโหมดสี">🌓</button>
-        </div>
-      </nav>
-      <section id="about" class="hero card reveal">
-        <div class="hero-grid">
-          <img class="avatar" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=400&q=80" alt="รูปโปรไฟล์"/>
-          <div>
-            <h1 class="fit" data-fit>เนบิวลา เอกซ์ <span class="muted">(NEBULA X)</span></h1>
-            <p class="subtitle">นักเรียนสายวิศวะ • หุ่นยนต์/เขียนโปรแกรม • ประเทศไทย</p>
-            <div class="badges">
-              <span class="badge bounce">Arduino</span>
-              <span class="badge">ESP8266</span>
-              <span class="badge">3D Printing</span>
-              <span class="badge">Figma</span>
-            </div>
-            <div class="cta">
-              <a class="btn bounce" href="#contact">ติดต่อฉัน</a>
-              <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">ดู GitHub</a>
-            </div>
-          </div>
-        </div>
-        <p class="intro">สวัสดีครับ ผมชอบสร้างโปรเจ็กต์ที่แก้ปัญหาจริง เช่น เรือเก็บขยะอัตโนมัติ ระบบ Smart Farm และเว็บฝึกเขียนโค้ด กำลังเตรียมเข้าวิศวกรรมคอมพิวเตอร์ 🎯</p>
-        <ul class="quick">
-          <li class="card mini"> <div class="k counter" data-target="15">0</div> โปรเจ็กต์</li>
-          <li class="card mini"> <div class="k counter" data-target="5">0</div> กิจกรรมอาสา</li>
-          <li class="card mini"> <div class="k">24/7</div> ชอบเรียนรู้</li>
-        </ul>
-        <div class="now marquee" aria-label="ตอนนี้กำลังโฟกัส">
-          กำลังโฟกัส: พอร์ตโฟลิโอสวยอ่านง่าย • ฝึก Embedded/IoT • เตรียมสอบเข้าวิศวะ
-        </div>
-      </section>
-    </div>
+  <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#top" class="brand">NEBULA X</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" id="navToggle">เมนู</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/gamezaa007" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="grid-2">
-      <article class="card reveal">
-        <h2 class="fit" data-fit>ข้อมูลส่วนตัว</h2>
-        <ul class="list">
-          <li>ชื่อ-สกุล: เนบิวลา เอกซ์</li>
-          <li>วันเกิด: 1 ม.ค. 2008</li>
-          <li>ที่อยู่: บึงกาฬ, ประเทศไทย</li>
-          <li>อีเมล: you@example.com</li>
-          <li>โทร: 08x-xxx-xxxx</li>
-        </ul>
-      </article>
-      <article class="card reveal">
-        <h2 class="fit" data-fit>เป้าหมาย</h2>
-        <ul class="list">
-          <li>พัฒนาเว็บพอร์ตให้ดูเป็นมืออาชีพ</li>
-          <li>ฝึก Data/Embedded + ทำโปรเจ็กต์แข่งขัน</li>
-          <li>เตรียมตัวเข้าคณะวิศวกรรมคอมพิวเตอร์</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="skills" class="card reveal">
-      <h2 class="fit" data-fit>ทักษะเด่น</h2>
-      <div class="skills">
-        <div class="skill"><span>HTML/CSS/JS</span><div class="meter"><i style="--w:0.8"></i></div></div>
-        <div class="skill"><span>Arduino / ESP8266</span><div class="meter"><i style="--w:0.75"></i></div></div>
-        <div class="skill"><span>3D Modeling/Printing</span><div class="meter"><i style="--w:0.7"></i></div></div>
-        <div class="skill"><span>Figma / UI Design</span><div class="meter"><i style="--w:0.65"></i></div></div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="hero">
+      <div class="hero-inner">
+        <h1>สวัสดีครับ ผม <span class="highlight">NEBULA X</span></h1>
+        <p>นักพัฒนา & Maker — ชอบ <strong>Robotics</strong>, <strong>IoT</strong>, และ <strong>Web</strong>. นี่คือพอร์ตโฟลิโอรวมผลงานเด่นของผม</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">ดูโปรเจกต์</a>
+          <a href="#contact" class="btn btn-ghost">ติดต่อ</a>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="reveal">
-      <h2 class="fit" data-fit>ผลงานเด่น</h2>
-      <div class="grid-3">
+    <!-- Projects Grid -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>งานที่คัดมาแสดงความสามารถด้านซอฟต์แวร์/ฮาร์ดแวร์</p>
+      </div>
+
+      <div class="grid projects-grid">
+        <!-- Project Card 1 -->
         <article class="card project">
-          <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&q=80" alt="ภาพโครงงาน" />
-          <div>
-            <h3>เรือเก็บขยะอัตโนมัติ</h3>
-            <p class="muted">หุ่นยนต์เรือมอเตอร์ 3 ตัว ควบคุมผ่านโทรศัพท์ มีตาข่ายเก็บขยะ</p>
-            <a class="btn ghost" href="#">ดูรายละเอียด</a>
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1280&auto=format&fit=crop" alt="ภาพหุ่นยนต์" loading="lazy" />
+          <div class="card-body">
+            <h3>Trash-Collecting Boat</h3>
+            <p>เรือเก็บขยะควบคุมด้วย Arduino Nano + L298N, RC และโหมดกึ่งอัตโนมัติ</p>
+            <ul class="tags">
+              <li>Arduino</li><li>L298N</li><li>RC</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn btn-small" href="#">รายละเอียด</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/gamezaa007" target="_blank" rel="noreferrer">โค้ด ↗</a>
+            </div>
           </div>
         </article>
+
+        <!-- Project Card 2 -->
         <article class="card project">
-          <img src="https://images.unsplash.com/photo-1581093588401-16f8c585f0ed?w=500&q=80" alt="ภาพโครงงาน" />
-          <div>
-            <h3>Smart Farm</h3>
-            <p class="muted">รดน้ำอัตโนมัติ วัดความชื้น แจ้งเตือนผ่านมือถือ ใช้ ESP8266</p>
-            <a class="btn ghost" href="#">ดูรายละเอียด</a>
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1280&auto=format&fit=crop" alt="คอมพิวเตอร์และโค้ด" loading="lazy" />
+          <div class="card-body">
+            <h3>Home for Code</h3>
+            <p>แอปสมาร์ทโฮม Python (Bluetooth/Wi‑Fi) คุมอุปกรณ์และจัดการฉากอัตโนมัติ</p>
+            <ul class="tags">
+              <li>Python</li><li>BLE/Wi‑Fi</li><li>UI</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn btn-small" href="#">รายละเอียด</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/gamezaa007" target="_blank" rel="noreferrer">โค้ด ↗</a>
+            </div>
           </div>
         </article>
+
+        <!-- Project Card 3 -->
         <article class="card project">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&q=80" alt="ภาพโครงงาน" />
-          <div>
-            <h3>Explore Chiang Mai</h3>
-            <p class="muted">เว็บไซต์นำเที่ยว ฝึก UI/UX และทำ Frontend</p>
-            <a class="btn ghost" href="#">ดูรายละเอียด</a>
+          <img src="https://images.unsplash.com/photo-1555617981-dac3880d3c95?q=80&w=1280&auto=format&fit=crop" alt="บอร์ดไมโครคอนโทรลเลอร์" loading="lazy" />
+          <div class="card-body">
+            <h3>Line‑Following Sumo</h3>
+            <p>หุ่นยนต์ติดตามเส้น + กลยุทธ์ซูโม่ PID และเซนเซอร์ IR ปรับแต่งได้</p>
+            <ul class="tags">
+              <li>PID</li><li>IR</li><li>C/C++</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn btn-small" href="#">รายละเอียด</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/gamezaa007" target="_blank" rel="noreferrer">โค้ด ↗</a>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="timeline" class="card reveal">
-      <h2 class="fit" data-fit>ไทม์ไลน์</h2>
-      <ol class="timeline">
-        <li><strong>2025</strong> — สร้างเว็บพอร์ตเวอร์ชันแรก ปรับดีไซน์ + เพิ่มหน้าผลงาน</li>
-        <li><strong>2024</strong> — ส่งประกวดสิ่งประดิษฐ์/หุ่นยนต์ ได้รางวัลชมเชย</li>
-        <li><strong>2023</strong> — เริ่มทำโปรเจ็กต์ IoT/Arduino และเรียนรู้ HTML/CSS/JS</li>
-      </ol>
+    <!-- About -->
+    <section id="about" class="section alt">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>สั้น ๆ เกี่ยวกับตัวผม</p>
+      </div>
+      <div class="about">
+        <p>ผมเป็นนักเรียนที่ชอบลงมือทำจริง รักการทดลอง ออกแบบระบบทั้งซอฟต์แวร์และฮาร์ดแวร์ จุดแข็งคือการแก้ปัญหาเชิงวิศวกรรมแบบเป็นขั้นตอน และการสื่อสารผลงานให้เข้าใจง่าย</p>
+        <ul class="bullets">
+          <li>สาย <strong>Robotics / Embedded</strong>: Arduino, ESP8266, เซนเซอร์, มอเตอร์ไดรเวอร์</li>
+          <li>สาย <strong>Software</strong>: Web, Python Automation, UI/UX</li>
+          <li>สนใจ <strong>Computer Engineering</strong> / <strong>Computer Science</strong></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact" class="grid-2">
-      <article class="card reveal">
-        <h2 class="fit" data-fit>ติดต่อฉัน</h2>
-        <ul class="list">
-          <li>อีเมล: you@example.com</li>
-          <li>โทร: 08x-xxx-xxxx</li>
-          <li>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourname</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/yourname</a></li>
-        </ul>
-      </article>
-      <form class="card reveal" onsubmit="event.preventDefault(); alert('ส่งข้อความเรียบร้อย!'); this.reset();">
-        <h2 class="fit" data-fit>ส่งข้อความด่วน</h2>
-        <label>ชื่อ<br><input required type="text" name="name" placeholder="พิมพ์ชื่อของคุณ" /></label>
-        <label>อีเมล<br><input required type="email" name="email" placeholder="name@mail.com" /></label>
-        <label>ข้อความ<br><textarea required name="message" rows="4" placeholder="สวัสดีครับ…"></textarea></label>
-        <button class="btn" type="submit">ส่งข้อความ</button>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>พร้อมร่วมงาน/แข่งขัน/ทำโปรเจกต์</p>
+      </div>
+
+      <form class="contact-form" name="contact" data-netlify="true" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-grid">
+          <label>ชื่อ
+            <input name="name" required placeholder="ชื่อของคุณ" />
+          </label>
+          <label>อีเมล
+            <input type="email" name="email" required placeholder="name@example.com" />
+          </label>
+        </div>
+        <label>ข้อความ
+          <textarea name="message" rows="5" required placeholder="สวัสดีครับ…"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
       </form>
-    </section>
 
-    <section class="card testimonials reveal">
-      <h2 class="fit" data-fit>คำชมสั้น ๆ</h2>
-      <div class="slider">
-        <figure>“ไอเดียดี ลงมือทำจริง ผลงานน่าสนใจมาก” — ครูที่ปรึกษา</figure>
-        <figure>“จัดพอร์ตอ่านง่าย ดีไซน์สะอาดตา” — เพื่อนร่วมทีม</figure>
-        <figure>“ตั้งเป้าหมายชัด มีวินัยในการฝึก” — รุ่นพี่</figure>
-      </div>
+      <p class="muted">หรือส่งข้อความผ่าน <a href="mailto:you@example.com">อีเมล</a> ได้เช่นกัน</p>
     </section>
   </main>
 
-  <footer>
-    สงวนลิขสิทธิ์ © <span id="year"></span> • ทำด้วยใจและกาแฟ ☕
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NEBULA X · สร้างด้วย GitHub Pages</p>
+    <a href="#top" class="to-top" aria-label="กลับขึ้นด้านบน">↑</a>
   </footer>
 
- <script src="./main.js" defer></script>
+  <script src="./main.js" defer></script>
 </body>
 </html>
-
